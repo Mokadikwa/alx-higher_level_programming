@@ -6,6 +6,5 @@ class Square():
     """represent a Square"""
     pass
 
-    def __init__(self, Square):
-        self.__Square = Square
-x = Square
+    def __init__(self, size):
+        self.__size = size
