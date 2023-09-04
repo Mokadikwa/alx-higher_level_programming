@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 import sys
 
+
 def is_safe(board, row, col, n):
 
     for i in range(col):
@@ -11,12 +12,12 @@ def is_safe(board, row, col, n):
         if board[i][j] == 1:
             return False
 
-    # Check lower diagonal on the left side
     for i, j in zip(range(row, n), range(col, -1, -1)):
         if board[i][j] == 1:
             return False
 
     return True
+
 
 def print_solution(board, n):
     solution = []
@@ -25,6 +26,7 @@ def print_solution(board, n):
             if board[i][j] == 1:
                 solution.append([i, j])
     print(solution)
+
 
 def solve_nqueens_util(board, col, n):
     if col >= n:
@@ -37,6 +39,7 @@ def solve_nqueens_util(board, col, n):
             solve_nqueens_util(board, col + 1, n)
             board[i][col] = 0  # Backtrack
 
+
 def solve_nqueens(n):
     if n < 4:
         print("N must be at least 4")
@@ -44,6 +47,7 @@ def solve_nqueens(n):
 
     board = [[0 for _ in range(n)] for _ in range(n)]
     solve_nqueens_util(board, 0, n)
+
 
 if __name__ == "__main__":
     if len(sys.argv) != 2:
