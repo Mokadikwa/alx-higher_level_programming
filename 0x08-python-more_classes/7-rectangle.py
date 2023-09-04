@@ -1,5 +1,10 @@
 #!/usr/bin/python3
+"""Write a class Rectangle"""
+
+
 class Rectangle:
+    """Represents a rectangle"""
+
     number_of_instances = 0
     print_symbol = "#"
 
