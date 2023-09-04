@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-"""Write a class Rectangle"""
+"""
+Write a class Rectangle
+"""
 
 
 class Rectangle:
