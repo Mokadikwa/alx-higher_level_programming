@@ -1,13 +1,7 @@
 #!/usr/bin/python3
-<<<<<<< HEAD
-def sum(a, b):
-    return (a + b)
+""" function that adds 2 integers"""
 
-a = int(input('Enter 1st number: '))
-b = int(input('Enter 2nd number: '))
 
-print(f'Sum of {a} and {b} is {sum(a, b)}')
-=======
 def add_integer(a, b=98):
     if not isinstance(a, int):
         raise TypeError("a must be an integer")
@@ -21,4 +15,3 @@ def add_integer(a, b=98):
         b = int(b)
 
     return a + b
->>>>>>> 9fd8d0c07fcec92bb27507b75d737cdcc644880b
