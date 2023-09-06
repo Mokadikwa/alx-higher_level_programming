@@ -1,0 +1,63 @@
+Matrix Multiplication
+=====================
+
+This function `matrix_mul(m_a, m_b)` performs matrix multiplication on two matrices `m_a` and `m_b`. It follows specific requirements and validations.
+
+Usage
+-----
+
+```python
+>>> matrix_mul = __import__('100-matrix_mul').matrix_mul
+
+# Valid input matrices
+>>> matrix_a = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+>>> matrix_b = [[9, 8, 7], [6, 5, 4], [3, 2, 1]]
+
+# Multiply the matrices
+>>> result = matrix_mul(matrix_a, matrix_b)
+>>> result
+[[30, 24, 18], [84, 69, 54], [138, 114, 90]]
+
+# Invalid input types (m_a is not a list)
+>>> matrix_mul(5, matrix_b)
+Traceback (most recent call last):
+TypeError: m_a must be a list or m_b must be a list
+
+# Invalid input types (m_b is not a list)
+>>> matrix_mul(matrix_a, "matrix_b")
+Traceback (most recent call last):
+TypeError: m_b must be a list or m_b must be a list
+
+# Empty matrices (m_a is empty)
+>>> matrix_a = []
+>>> matrix_mul(matrix_a, matrix_b)
+Traceback (most recent call last):
+ValueError: m_a can't be empty or m_b can't be empty
+
+# Empty matrices (m_b is empty)
+>>> matrix_a = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+>>> matrix_b = [[]]
+>>> matrix_mul(matrix_a, matrix_b)
+Traceback (most recent call last):
+ValueError: m_a can't be empty or m_b can't be empty
+
+# Non-integer/float values in m_a
+>>> matrix_a = [[1, 2, "three"], [4, 5, 6], [7, 8, 9]]
+>>> matrix_mul(matrix_a, matrix_b)
+Traceback (most recent call last):
+TypeError: m_a should contain only integers or floats or m_b should contain only integers or floats
+
+# Non-integer/float values in m_b
+>>> matrix_a = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+>>> matrix_b = [[9, 8, 7], [6, "five", 4], [3, 2, 1]]
+>>> matrix_mul(matrix_a, matrix_b)
+Traceback (most recent call last):
+TypeError: m_a should contain only integers or floats or m_b should contain only integers or floats
+
+# Incompatible matrices for multiplication
+>>> matrix_a = [[1, 2], [3, 4]]
+>>> matrix_b = [[5, 6, 7], [8, 9, 10]]
+>>> matrix_mul(matrix_a, matrix_b)
+Traceback (most recent call last):
+ValueError: m_a and m_b can't be multiplied
+
