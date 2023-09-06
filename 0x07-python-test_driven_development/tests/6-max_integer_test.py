@@ -1,6 +1,7 @@
 import unittest
 max_integer = __import__('6-max_integer').max_integer
 
+
 class TestMaxInteger(unittest.TestCase):
     def test_empty_list(self):
         self.assertIsNone(max_integer([]))
@@ -20,6 +21,6 @@ class TestMaxInteger(unittest.TestCase):
     def test_duplicate_numbers(self):
         self.assertEqual(max_integer([3, 3, 3, 3]), 3)
 
+
 if __name__ == '__main__':
     unittest.main()
-
