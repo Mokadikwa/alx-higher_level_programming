@@ -1,6 +1,39 @@
 0x09. Python - Everything is object
-Python
-OOP
+Background Context
+Now that we understand that everything is an object and have a little bit of knowledge, let’s pause and look a little bit closer at how Python works with different types of objects.
+
+BTW, have you ever modified a variable without knowing it or wanting to? I mean:
+
+>>> a = 1
+>>> b = a
+>>> a = 2
+>>> b
+1
+>>> 
+OK. But what about this?
+
+>>> l = [1, 2, 3]
+>>> m = l
+>>> l[0] = 'x'
+>>> m
+['x', 2, 3]
+>>> 
+
+General
+Why Python programming is awesome
+What is an object
+What is the difference between a class and an object or instance
+What is the difference between immutable object and mutable object
+What is a reference
+What is an assignment
+What is an alias
+How to know if two variables are identical
+How to know if two variables are linked to the same object
+How to display the variable identifier (which is the memory address in the CPython implementation)
+What is mutable and immutable
+What are the built-in mutable types
+What are the built-in immutable types
+How does Python pass variables to functions
 
 Requirements
 Python Scripts
@@ -16,39 +49,3 @@ The length of your files will be tested using wc
 Only one line
 No Shebang
 All your files should end with a new line
-
-0. Who am I?
-mandatory
-What function would you use to get the type of an object?
-
-Write the name of the function in the file, without ().
-
-1. Where are you?
-mandatory
-How do you get the variable identifier (which is the memory address in the CPython implementation)?
-
-Write the name of the function in the file, without ().
-
-2. Right count
-mandatory
-In the following code, do a and b point to the same object? Answer with Yes or No.
-
-3. Right count =
-mandatory
-In the following code, do a and b point to the same object? Answer with Yes or No.
-
-4. Right count =
-mandatory
-In the following code, do a and b point to the same object? Answer with Yes or No.
-
-5. Right count =+
-mandatory
-In the following code, do a and b point to the same object? Answer with Yes or No.
-
-6. Is equal
-mandatory
-What do these 3 lines print?
-
-7. Is the same
-mandatory
-What do these 3 lines print?
