@@ -1,0 +1,55 @@
+Matrix Multiplication
+=====================
+
+This function `matrix_divided(matrix, div)` performs matrix multiplication on two matrices `m_a` and `m_b`. It follows specific requirements and validations.
+
+Usage
+-----
+
+```python
+
+>>> matrix_divided = __import__('2-matrix_divided').matrix_divided
+
+# Import the matrix_divided function correctly
+>>> from matrix_divided import matrix_divided
+
+# Valid input matrices
+>>> matrix_a = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+>>> matrix_b = [[9, 8, 7], [6, 5, 4], [3, 2, 1]]
+
+# Divide the matrices
+>>> result = matrix_divided(matrix_a, matrix_b)
+>>> result
+[[0.1111111111111111, 0.25, 0.42857142857142855], [0.6666666666666666, 1.0, 1.5], [2.3333333333333335, 4.0, 9.0]]
+
+# Invalid input types (matrix_b is not a list)
+>>> matrix_divided(matrix_a, "matrix_b")
+Traceback (most recent call last):
+TypeError: m_b must be a list or m_b must be a list
+
+
+# Invalid input types (matrix_b is not a list)
+>>> matrix_divided(matrix_a, "matrix_b")
+Traceback (most recent call last):
+TypeError: m_b must be a list or m_b must be a list
+
+# Empty matrices (matrix_a is empty)
+>>> matrix_a = []
+>>> matrix_b = [[9, 8, 7], [6, 5, 4], [3, 2, 1]]
+>>> matrix_divided(matrix_a, matrix_b)
+Traceback (most recent call last):
+TypeError: Each row of the matrix must have the same size
+
+# Empty matrices (matrix_b is empty)
+>>> matrix_a = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+>>> matrix_b = []
+>>> matrix_divided(matrix_a, matrix_b)
+Traceback (most recent call last):
+TypeError: Each row of the matrix must have the same size
+
+# Matrices with rows of different sizes
+>>> matrix_a = [[1, 2, 3], [4, 5], [7, 8, 9]]
+>>> matrix_b = [[9, 8, 7], [6, 5, 4], [3, 2, 1]]
+>>> matrix_divided(matrix_a, matrix_b)
+Traceback (most recent call last):
+TypeError: Each row of the matrix must have the same size
