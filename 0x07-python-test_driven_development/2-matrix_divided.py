@@ -1,8 +1,13 @@
 #!/usr/bin/python3
+<<<<<<< HEAD
 
 def matrix_divided(matrix, div):
     """check that divides all elements of a matrix"""
 
+=======
+def matrix_divided(matrix, div):
+    """check that divides all elements of a matrix"""
+>>>>>>> 449350a969ddec876e9f03f253a36aaa3c17b5dd
     if not all(isinstance(row, list) and all(isinstance(x, (int, float)) for x in row) for row in matrix):
         raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
 

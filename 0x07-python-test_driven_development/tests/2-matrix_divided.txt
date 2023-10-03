@@ -7,8 +7,15 @@ Usage
 -----
 
 ```python
+<<<<<<< HEAD
 >>> matrix_divided = __import__('2-matrix_divided').matrix_divided
 
+=======
+
+>>> matrix_divided = __import__('2-matrix_divided').matrix_divided
+
+# Import the matrix_divided function correctly
+>>>>>>> 449350a969ddec876e9f03f253a36aaa3c17b5dd
 >>> from matrix_divided import matrix_divided
 
 # Valid input matrices
@@ -17,7 +24,10 @@ Usage
 
 # Divide the matrices
 >>> result = matrix_divided(matrix_a, matrix_b)
+<<<<<<< HEAD
 
+=======
+>>>>>>> 449350a969ddec876e9f03f253a36aaa3c17b5dd
 >>> result
 [[0.1111111111111111, 0.25, 0.42857142857142855], [0.6666666666666666, 1.0, 1.5], [2.3333333333333335, 4.0, 9.0]]
 
@@ -26,6 +36,15 @@ Usage
 Traceback (most recent call last):
 TypeError: m_b must be a list or m_b must be a list
 
+<<<<<<< HEAD
+=======
+
+# Invalid input types (matrix_b is not a list)
+>>> matrix_divided(matrix_a, "matrix_b")
+Traceback (most recent call last):
+TypeError: m_b must be a list or m_b must be a list
+
+>>>>>>> 449350a969ddec876e9f03f253a36aaa3c17b5dd
 # Empty matrices (matrix_a is empty)
 >>> matrix_a = []
 >>> matrix_b = [[9, 8, 7], [6, 5, 4], [3, 2, 1]]
